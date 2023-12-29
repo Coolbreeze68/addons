@@ -64,6 +64,7 @@ RUN \
 ARG DECONZ_VERSION
 RUN \
     set -x \
+    && echo ${BUILD_ARCH} ${DECONZ_VERSION} > /version.txt
     && if [ "${BUILD_ARCH}" = "armhf" ]; \
         then \
             curl -q -L -o /deconz.deb http://deconz.dresden-elektronik.de/raspbian/stable/deconz-${DECONZ_VERSION}-qt5.deb; \
