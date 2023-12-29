@@ -1,6 +1,6 @@
 ---
 version: 6.22.0
-slug: deconz_2
+slug: deconz
 name: deCONZ-2.25.0
 description: >-
   Control a Zigbee network with ConBee or RaspBee by Dresden Elektronik.
